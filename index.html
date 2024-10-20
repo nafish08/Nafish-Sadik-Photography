@@ -45,6 +45,8 @@
             /* Rounded corners */
             display: block;
             /* Block display to avoid gaps */
+            cursor: pointer;
+            /* Add cursor pointer */
         }
 
         .contact-info {
@@ -102,7 +104,7 @@
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://i.ibb.co.com/GQznJwH/Carosel-1.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co.com/tD8dPVC/Carosel-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Moments Through My Lens</h5>
                         <p>Photography is my way of capturing the beauty in everyday life. From fleeting moments to
@@ -110,7 +112,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://i.ibb.co.com/19TSNnH/Carosel-2.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co.com/7yTRzVQ/Carosel-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Faces and Stories</h5>
                         <p>I love capturing candid portraits that reveal the true character of a person. Every face
@@ -119,7 +121,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://i.ibb.co.com/Ss52rLt/Carosel-3.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co.com/bFN515n/Carosel-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Nature’s Quiet Wonders</h5>
                         <p>Exploring nature through my camera brings me peace. Whether it's a calm sunrise or the
@@ -144,70 +146,273 @@
     <section class="container my-5">
         <div class="gallery">
             <div class="gallery-item">
-                <img src="https://i.ibb.co/FwQVk6P/IMG-7752edited.jpg" alt="Sample Photo 1" class="img-fluid rounded">
+                <!-- Add data attributes for the modal -->
+                <img src="https://i.ibb.co.com/thR9X1C/IMG-3839-1.jpg" alt="Sample Photo 1" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/WWMcxkL/IMG-7757edited.jpg" alt="Sample Photo 2" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/bBZCPWn/IMG-3960-1.jpg" alt="Sample Photo 2" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/8KbMFDK/IMG-7681edited.jpg" alt="Sample Photo 3" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/CBmSdBX/IMG-4351-1.jpg" alt="Sample Photo 3" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/nc8PyzN/IMG-9234edited.jpg" alt="Sample Photo 4" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/Lh21cV7/IMG-4407-1-1.jpg" alt="Sample Photo 4" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/Wtcv8GT/IMG-9177edited.jpg" alt="Sample Photo 5" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/LSLS2s6/IMG-4418-2-1.jpg" alt="Sample Photo 5" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/3pX8K93/IMG-9192edited.jpg" alt="Sample Photo 6" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/34sFzqz/IMG-4444-1-1.jpg" alt="Sample Photo 6" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/0rnqZvS/IMG-9200edited.jpg" alt="Sample Photo 7" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/5s8Q50c/IMG-5028-1.jpg" alt="Sample Photo 7" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/6B9X6pK/IMG-9215edited.jpg" alt="Sample Photo 8" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/kqP72tN/IMG-5920edited-1.jpg" alt="Sample Photo 8"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
             </div>
             <div class="gallery-item">
-                <img src="https://i.ibb.co/5BKyqxf/IMG-9231edited.jpg" alt="Sample Photo 9" class="img-fluid rounded">
+                <img src="https://i.ibb.co.com/wLcFCX9/IMG-5979edited-1.jpg" alt="Sample Photo 9"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Qv2d7BY/IMG-6385edited-1.jpg" alt="Sample Photo 10"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Dk1LcyG/IMG-6935-1.jpg" alt="Sample Photo 11" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <!-- Add data attributes for the modal -->
+                <img src="https://i.ibb.co.com/M2wvMW5/IMG-7068-1.jpg" alt="Sample Photo 1" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/cNwJXzq/IMG-7473edited-1.jpg" alt="Sample Photo 2"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/BsM70xD/IMG-7681edited-1.jpg" alt="Sample Photo 3"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/zGY2zqw/IMG-7801edited-1-1.jpg" alt="Sample Photo 4"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/NKS7nGn/IMG-7832edited-1.jpg" alt="Sample Photo 5"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/SmhHVMy/IMG-7854edited-1.jpg" alt="Sample Photo 6"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/hYkmNqP/IMG-7887edited-1.jpg" alt="Sample Photo 7"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/xg3YXZp/IMG-7903edited-1.jpg" alt="Sample Photo 8"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/cwzZmvN/IMG-7939edited-1.jpg" alt="Sample Photo 9"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/SX0dnQJ/IMG-8003edited-1.jpg" alt="Sample Photo 10"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/9gbWHnN/IMG-8015edited-1.jpg" alt="Sample Photo 11"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <!-- Add data attributes for the modal -->
+                <img src="https://i.ibb.co.com/47WJY4g/IMG-8018edited-1.jpg" alt="Sample Photo 1"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/020mg6m/IMG-8075edited-1.jpg" alt="Sample Photo 2"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/47B25Q6/IMG-8325edited-1.jpg" alt="Sample Photo 3"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Wtpjmbv/IMG-8353edited-1.jpg" alt="Sample Photo 4"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/sC5VNZK/IMG-8360edited-1.jpg" alt="Sample Photo 5"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/nBfkNfx/IMG-8372edited-1-1.jpg" alt="Sample Photo 6"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/CbB8WH2/IMG-8406edited-1.jpg" alt="Sample Photo 7"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/TMHhLD4/IMG-8439edited-1.jpg" alt="Sample Photo 8"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/d79jvjG/IMG-8454edited-1.jpg" alt="Sample Photo 9"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/tc0FxK7/IMG-8461edited-1.jpg" alt="Sample Photo 10"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/THsZdVb/IMG-8488edited-1-1.jpg" alt="Sample Photo 11"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <!-- Add data attributes for the modal -->
+                <img src="https://i.ibb.co.com/S5q4xNN/IMG-8518edited-1.jpg" alt="Sample Photo 1"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/LnMgkPW/IMG-8522edited-1.jpg" alt="Sample Photo 2"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Qb29Dyx/IMG-8536edited-1.jpg" alt="Sample Photo 3"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/KrhgbMZ/IMG-8551edited-1.jpg" alt="Sample Photo 4"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Y4CxswQ/IMG-8556edited-1.jpg" alt="Sample Photo 5"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/SB21dsx/IMG-9177edited-1.jpg" alt="Sample Photo 6"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/9HLQFMV/IMG-9192edited-1.jpg" alt="Sample Photo 7"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Wpcyc2N/IMG-9200edited-1.jpg" alt="Sample Photo 8"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/xfKN5vZ/IMG-9205edited-1.jpg" alt="Sample Photo 9"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/7tsdXfW/IMG-9215edited-1.jpg" alt="Sample Photo 10"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/QXjDxhB/IMG-9231edited-1.jpg" alt="Sample Photo 11"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <!-- Add data attributes for the modal -->
+                <img src="https://i.ibb.co.com/fH400sn/IMG-9497-1.jpg" alt="Sample Photo 1" class="img-fluid rounded"
+                    data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/Zx2VMWG/IMG-9621edited-1.jpg" alt="Sample Photo 2"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/syrDQpk/IMG-9789edited-1.jpg" alt="Sample Photo 3"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co.com/BqQBHkc/IMG-9791edited-1.jpg" alt="Sample Photo 4"
+                    class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal"
+                    onclick="setImage(this.src)">
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section class="container contact-info text-center mb-5" id="contact">
+    <!-- Modal for full image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Full Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info" id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch or have any questions, feel free to reach out!</p>
-        <ul class="list-unstyled">
-            <li><strong>Email:</strong> md.nafish.sadik@gmail.com</li>
-            <li><strong>Phone:</strong> +880 1736638047</li>
-            <li><strong>Location:</strong> Jashore, Bangladesh</li>
-        </ul>
-        <!-- <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form> -->
-    </section>
+        <p>If you would like to get in touch, feel free to contact me at:</p>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>Phone: +123456789</p>
+    </div>
 
-    <footer class="mb-0">
-        <p class="text-center py-3 mb-0" style="background-color: #333; color: white;">&copy; 2024 My Photography | All
-            Rights Reserved</p>
-    </footer>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to set the image in the modal
+        function setImage(src) {
+            document.getElementById('modalImage').src = src;
+        }
+    </script>
 </body>
 
 </html>
