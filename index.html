@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
         }
 
@@ -19,29 +20,6 @@
             padding: 50px 0;
             background-color: #333;
             color: white;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
         }
 
         footer {
@@ -59,21 +37,39 @@
         <h1>My Photography Portfolio</h1>
     </header>
 
-    <section>
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="https://source.unsplash.com/random/400x300?photography" alt="Sample Photo 1">
-            <img src="https://source.unsplash.com/random/400x300?landscape" alt="Sample Photo 2">
-            <img src="https://source.unsplash.com/random/400x300?nature" alt="Sample Photo 3">
-            <img src="https://source.unsplash.com/random/400x300?city" alt="Sample Photo 4">
-            <img src="https://source.unsplash.com/random/400x300?portrait" alt="Sample Photo 5">
-            <img src="https://source.unsplash.com/random/400x300?wildlife" alt="Sample Photo 6">
+    <section class="container mt-5">
+        <h2 class="text-center">Gallery</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://source.unsplash.com/random/400x300?photography" class="img-fluid"
+                    alt="Sample Photo 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://source.unsplash.com/random/400x300?landscape" class="img-fluid" alt="Sample Photo 2">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://source.unsplash.com/random/400x300?nature" class="img-fluid" alt="Sample Photo 3">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://source.unsplash.com/random/400x300?city" class="img-fluid" alt="Sample Photo 4">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://source.unsplash.com/random/400x300?portrait" class="img-fluid" alt="Sample Photo 5">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://source.unsplash.com/random/400x300?wildlife" class="img-fluid" alt="Sample Photo 6">
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 My Photography | All Rights Reserved</p>
     </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
