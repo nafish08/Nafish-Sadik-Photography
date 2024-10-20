@@ -20,15 +20,41 @@
             height: auto;
             border-radius: 8px;
         }
+
+        /* Custom styles for the masonry layout */
+        .gallery {
+            column-count: 3;
+            /* Number of columns */
+            column-gap: 15px;
+            /* Space between columns */
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            /* Prevents items from breaking inside the column */
+            margin-bottom: 15px;
+            /* Space below each item */
+        }
+
+        .gallery img {
+            width: 100%;
+            /* Full width of the column */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 8px;
+            /* Rounded corners */
+            display: block;
+            /* Block display to avoid gaps */
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg" style="background-color: #333;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand text-white" href="#">
                     NS Photography
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -38,47 +64,56 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link text-white" href="#">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">CV</a>
+                            <a class="nav-link text-white"
+                                href="https://drive.google.com/uc?export=download&id=1CPg-tbBOvq1I-lW90v8YqDO70qe0QxxO"
+                                download>CV</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Contact</a>
+                            <a class="nav-link disabled text-white" aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
 
+
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner" style="height: 400px;">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://i.ibb.co.com/GQznJwH/Carosel-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Moments Through My Lens</h5>
+                        <p>Photography is my way of capturing the beauty in everyday life. From fleeting moments to
+                            lasting impressions, each photo reflects my personal journey and the world as I see it.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src=" https://i.ibb.co.com/19TSNnH/Carosel-2.jpg" class="d-block w-100" alt="...">
+                    <img src="https://i.ibb.co.com/19TSNnH/Carosel-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Faces and Stories</h5>
+                        <p>I love capturing candid portraits that reveal the true character of a person. Every face
+                            tells a story, and through my hobby, I explore those stories with natural, unposed
+                            photography.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://i.ibb.co.com/Ss52rLt/Carosel-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Nature’s Quiet Wonders</h5>
+                        <p>Exploring nature through my camera brings me peace. Whether it's a calm sunrise or the
+                            vibrant colors of autumn, I capture these serene moments to share my love for the natural
+                            world.</p>
                     </div>
                 </div>
             </div>
@@ -93,34 +128,42 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
     </header>
 
-    <section class="container mt-5">
-        <div class="row gallery">
-            <div class="col-md-4 gallery-item">
-                <img src="https://i.ibb.co/nc8PyzN/IMG-9234edited.jpg" alt="Sample Photo 1" class="img-fluid rounded">
+    <section class="container my-5">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/FwQVk6P/IMG-7752edited.jpg" alt="Sample Photo 1" class="img-fluid rounded">
             </div>
-            <div class="col-md-4 gallery-item">
-                <img src="https://i.ibb.co/Wtcv8GT/IMG-9177edited.jpg" alt="Sample Photo 2" class="img-fluid rounded">
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/WWMcxkL/IMG-7757edited.jpg" alt="Sample Photo 2" class="img-fluid rounded">
             </div>
-            <div class="col-md-4 gallery-item">
-                <img src="https://i.ibb.co/3pX8K93/IMG-9192edited.jpg" alt="Sample Photo 3" class="img-fluid rounded">
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/8KbMFDK/IMG-7681edited.jpg" alt="Sample Photo 3" class="img-fluid rounded">
             </div>
-            <div class="col-md-4 gallery-item">
-                <img src="https://i.ibb.co/0rnqZvS/IMG-9200edited.jpg" alt="Sample Photo 4" class="img-fluid rounded">
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/nc8PyzN/IMG-9234edited.jpg" alt="Sample Photo 4" class="img-fluid rounded">
             </div>
-            <div class="col-md-4 gallery-item">
-                <img src="https://i.ibb.co/6B9X6pK/IMG-9215edited.jpg" alt="Sample Photo 5" class="img-fluid rounded">
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/Wtcv8GT/IMG-9177edited.jpg" alt="Sample Photo 5" class="img-fluid rounded">
             </div>
-            <div class="col-md-4 gallery-item">
-                <img src="https://i.ibb.co/5BKyqxf/IMG-9231edited.jpg" alt="Sample Photo 6" class="img-fluid rounded">
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/3pX8K93/IMG-9192edited.jpg" alt="Sample Photo 6" class="img-fluid rounded">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/0rnqZvS/IMG-9200edited.jpg" alt="Sample Photo 7" class="img-fluid rounded">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/6B9X6pK/IMG-9215edited.jpg" alt="Sample Photo 8" class="img-fluid rounded">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.ibb.co/5BKyqxf/IMG-9231edited.jpg" alt="Sample Photo 9" class="img-fluid rounded">
             </div>
         </div>
     </section>
 
-    <footer>
-        <p class="text-center py-3 m-0" style="background-color: #333; color: white;">&copy; 2024 My Photography | All
+    <footer class="mb-0">
+        <p class="text-center py-3 mb-0" style="background-color: #333; color: white;">&copy; 2024 My Photography | All
             Rights Reserved</p>
     </footer>
 
